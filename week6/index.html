@@ -7,26 +7,12 @@
     </head>
     <main>
         <section class="displayTask">
-            <h1>To Do List</h1>
-            <div class="list" id="tasklist">
-                <input type="checkbox">
-
-                <div class="content">
-                    <input type="text" value="" readonly/>
-                </div>
-
-                <div class="actions">
-                    <button class="delete">&#43;</button>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section class="addTask">
-            <form id="create-task">
-                <input type="text" name="content" id="content" placeholder="Insert Task Here">
+            <form id="todo-form">
+                <h1>To Do List</h1>
+                <div class="list" id="todo-list"></div>
+                <input type="text" placeholder="get groceries, read book, clean car, etc." name="content" id="content">
                 <input type="submit" value="Add Task"/>
             </form>
         </section>
-    </footer>
+    </main>
 </html>
