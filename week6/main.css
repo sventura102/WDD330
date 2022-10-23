@@ -44,7 +44,7 @@ input[type="checkbox"] {
     margin-bottom: 1rem;
 }
 
-footer .create-task input[type="submit"] {
+footer .add-task input[type="submit"] {
     display: block;
     width: 100%;
     font-size: 1rem;
