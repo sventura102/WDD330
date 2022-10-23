@@ -54,3 +54,12 @@ input[type="checkbox"] {
     margin-bottom: 1rem;
 }
 
+footer input{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: #e0bbe4;
+    border-radius: 0.5rem;
+}
