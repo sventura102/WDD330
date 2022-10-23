@@ -1,5 +1,6 @@
 html {
     font-family: sans-serif;
+    color:rgb(200, 200, 200);
 }
 
 input, button {
@@ -36,5 +37,10 @@ input[type="checkbox"] {
 
 .create-task input[type="submit"] {
     display: block;
-
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: #e0bbe4;
+    border-radius: 0.5rem;
 }
