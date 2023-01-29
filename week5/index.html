@@ -6,40 +6,46 @@
     </head>
     <body>
         <h1>Week 5 Notes</h1>
-        <h2>Testing and Debugging</h2>
-        <p>Errors are caused when something goes wrong in the program. They usually caused by one of the following: </p>
-        <ul>
-            <li><p><b>System error</b>- there's a problem with the system or external devices with which the program is interacting.</p></li>
-            <li><p><b>Programmer error</b>- the program contains incorrect syntax or faulty logic; it could even be as simple as a typo.</p></li>
-            <li><p><b>User error</b>- the use has entered data incorrectly, which the program is unable to handle.</p></li>
-        </ul>
-        <p>An <b>exception</b> is an error that produces a return value that can then be used by the program to deal with the error.</p>
-        <p>Exceptions can also produce a <b>stack trace</b>. This is a sequence of methods or functions that lead to the point where the error occured.</p>
-        <p>A <b>warning</b> can occur if there's an error in the code that isn't enough to cause the program to crash. This means the program will continue to run <br>
-        after a warning. This may cause the program to continuing running <i>incorrectly</i></p>
+        <!--Notes on Debugging. Essential when looking for errors in HTML-->
+        <h2><b>Debugging</b></h2>
+        <p>Debugging is the process of a finding and fixing errors within a script.</p>
+        <p>In order to get start, you need to get to the sources panel. On windows, press f12 and go to the sources panel. It will show all the different files that made up the code on the website.</p>
+        <p>The <b>File Navigator</b> lists all of those things including HTML, JS, CSS, and more. Even Chrome extensions.</p>
+        <p>The <b>Code Editor</b> shows the source code.</p>
+        <p>The <b>Javascript Debugging</b> pane is for debugging.</p>
 
-        <p><b>It is better to fail loudly than quietly so error can be identified and fixed quickly.</b></p>
+        <p>If we press <i>ESC</i> then the console opens below. Here we can type commands and press <i>ENTER</i> to execute.</p>
 
-        <p>Using strict mode allows for less mistakes by catching errors early on. <b>It must be declared prior to writing code.</b></p>
+        <p> A <i>breakpoint</i> is a point of code where the debugger will automatically pause the JavaScript execution. When paused, we can look at the variables and try to debug it if needed.</p>
 
-        <p><b>Linting Tools</b> can be used to test to quality of JS code, beyond only using strict mode. It's designed to highlight sloppy programming or syntax errors.</p>
+        <p>It allows us to...
+            <ul>Go to a breakpoint with the help of the right panel.</ul>
+            <ul>Disable the breakpoint by unchecking it.</ul>
+            <ul>Remove the breakpoint by right-clicking and selecting Remove.</ul>
+        </p>
 
-        <p>By using the console in the browser, we're able to identify bugs in the code and debug it.</p>
+        <p>There are different buttons that allow for different executions.</p>
+        <p>
+            <ul>The <b>Resume</b> key, hotkey F8, allows for the execution to continue.</ul>
+            <ul>The <b>Step</b> key, hotkey F9, runs the next statement. Clicking it again and again will step through all the script statements one by one.</ul>
+            <ul>The <b>Step over</b>, hotkey F10, runs the next statement but doesn't go into the function.</ul>
+            <ul>The <b>Enable/Disable</b> button does not move the execution it just works as an on/off for breakpoints.</ul>
+            <ul>The hexagon with a pause sign inside of it will cause the execution to pause when there is an error.</ul>
+        </p>
 
-        <p><b>Error Objects</b> notify the user of when an exception occurs. Created by 'const error = new Error();'</p>
+        <!--Notes on Coding Style-->
 
-        <h2>Tests</h2>
+        <h2><b>Coding Style</b></h2>
+        <p><b>Line Length</b> should be agreed upon at the team level. Usually 80 or 120 characters.</p>
+        <p><b>Horizontal Indents</b> allows for there to be more organization so code is not so jumbled together. Easy to find things that are within other sections, classes, etc.</p>
+        <p><b>Function Placement</b> is a rule that allows code, that the function is going to call, to be called first before creating the function.</p>
+        <p><b>Semicolons</b> should be used after every statement.</p>
 
-        <p>While often overlooked, it's important to test code so that errors can be indentified early.</p>
+        <!--Catching Errors-->
 
-        <p>In order to catch them, Sitepoint says to follow these steps:</p>
-        <ul>
-            <li><p>Write tests</p></li>
-            <li><p>Write code to pass the tests</p></li>
-            <li><p>Refractor the code</p></li>
-            <li><p>Test refractored code</p></li>
-            <li><p>Write more tests for new features</p></li>
-        </ul>
-        <a href="/week5/teamactivity.html">Team Activity</a>
+        <h2><b>Questions</b></h2>
+        <p>
+            <ul>Will it be necessary to use the Try, Catch code or will we be using online verifiers?</ul>
+        </p>
     </body>
 </html>
