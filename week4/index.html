@@ -6,24 +6,26 @@
     </head>
     <body>
         <h1>Week 4 Notes</h1>
-        <h2>Forms</h2>
-        <p>Forms are made up of a <b>form</b> element that contains form controls such as input fields, select menus and buttons.
-        These input fields can be populated with information that is processed once the form has been submitted.</p>
-        <p>When it comes to forms we want the user to be able to input information via accessible controls through the
-            making of forms. A lot of it is done in the Front End.</p>
-        <p><b>document.forms</b> will return an HTML collection of all the forms on the page.</p>
-        <p><b>forms.elements</b> will return an HTML collection of all the elements contained within a form.</p>
-        <p>Forms have a <b>submit</b> event that can be used to intercept a form before it's been submitted.</p>
+        <h2>Fetch</h2>
+        <p>Fetch allows us to get data from another server by creating a function that will allow us to get the information from a URL.</p>
+        <p>Oftentimes, it won't fully load so we need to set a return for it to tell us if there is an error if it won't show the information.</p>
+        <p>The errors that we received for this week required us to use our console log in order to find error in our JS because it wasn't showing the information 
+            we wanted or the error itself.
+        </p>
         
-        <h2>Object Oriented Programming(OOP) in JS</h2>
-        <p>Often used to model representations of objects in the real world.</p>
-        <p>There are three main concepts in OOP: Encapsulation, Polymorphism, and Inheritance.</p>
-        <p><b>Encapsulation</b>- this involves keeping all the programming logic inside an object and making methods available to implement the functionality, without the outside world needing to know how it’s done.</p>
-        <p><b>Polymorphism</b>- (the same process can be used for different objects)  this means various objects can share the same method, but also have the ability to override shared methods with a more specific implementation.</p>
-        <p><b>Inheritance</b>- (taking the same features and putting it inside another object)  this means we can take an object that already exists and inherit all its properties and methods. We can then improve on its functionality by adding new properties and methods.</p>
-        <p>An alternative way to create objects is to use a <b>constructor function.</b></p>
-        <p>The keywords <b>this</b>is used to represent the object that will be returned by the constructor function.</p>
-        <p>JavaScript uses a prototypal inheritance model. This means that every class has a prototype property that is shared by every instance of the class.</p>
+        <h2>Single Apps</h2>
+        <p>Single apps allows for the site to pull information from the site without reloading the browser.</p>
+        <p>This allows for users to search the site and not have to refresh everything completely (which would probably need info to be sent into 
+            the server and then back to the user to find what they're looking for. that would probably take to long, even creating an individual HTMLpage
+            for what they are looking for.)
+        </p>
+        <p>Although it sounds very good and practical in theory, it takes a lot of time to develop as well as keeping the site from actually processing to a whole
+            different page. Instead, it was said in the 'Problem with single page apps' that it's just better to make JS that changes the URL in order to load the correct page!
+        </p>
+
+        <h2>Questions</h2>
+        <p>Would we always want to use Fetch in order to grab information from another page?</p>
+        <p>What would be a good example of a website that was only wanting to pull specific content from a page? Would we use JSON instead if it wasn't possible?</p>
 
     </body>
 </html>
