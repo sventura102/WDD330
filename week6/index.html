@@ -2,17 +2,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <title>To Do List</title>
+        <title>Wee 6 - Notes</title>
         <link rel="stylesheet" href="main.css">
     </head>
-    <main>
-        <section class="displayTask">
-            <form id="todo-form">
-                <h1>To Do List</h1>
-                <div class="list" id="todo-list"></div>
-                <input type="text" placeholder="get groceries, read book, clean car, etc." name="content" id="content">
-                <input type="submit" value="Add Task"/>
-            </form>
-        </section>
-    </main>
+    <body>
+        <h1>Week 6</h1>
+        <p>Already being familiar with forms in HTML, here are ways to implement them into JS when calling the class.</p>
+        <p><b>document.form[name/index]</b> allows us to create the form.</p>
+        <ul>
+            <p><b>input.value</b> or <b>textarea.value</b> allows for there to be a new value or text.</p>
+            <p><b>input.checked</b> allows there to be a checkbox or radio button</p>
+            <p><b>select</b> allows for there to be 3 properties: .option, .value, and .selectedIndex. Including .checked adds
+            a checkbox or radio button.</p>
+        </ul>
+
+        <h2>Form Data</h2>
+        <p>Form data object replicates what a form does and sends data through a fetch call.</p>
+        <p>Inside the array there is one array for each element. Those include a name and a value.</p>
+        <p>With the .append method you can put the name and value inside to send data to the form.</p>
+        <p>When you want to upload a file it is a .blob</p>
+        <p> .fileName is what you want to call the file that is being sent to the server.</p>
+
+        <h2>Forms Submit</h2>
+        <p>The submit event happens when the form is submitted and validates the form before sending it to the server.</p>
+        <p>The event allows for the user to be alerted is input isn't put correctly or if nothing is submitted at all.</p>
+        <p>Enter can used as long as the submit button is focused even though there is no 'click' involved.</p>
+        <p>The <b>form.submit()</b> method is called to submit a form to the server manually.</p>
+
+        <h2>Questions</h2>
+        <p>Is it a lot easier to code a form in JS then in HTML?</p>
+    </body>
 </html>
