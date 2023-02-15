@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Week 7</title>
+    </head>
+    <body>
+        <h1>Week 7- Notes</h1>
+        
+        <p><b>Code blocks</b> keep JS code from interpreting the wrong line. Everything within the curly brackets get called without intervening
+            with anything outside of it. In the same note, if something outside of the curly brackets was called even though the variable is only
+            on the inside then it will just return an error message because that code doesn't exist outside of the curly brackets. Only within it.
+
+            Ex: {
+                let message = "Hello"; (only visible in this block)
+                alert (message): (Hello)
+            }
+
+            alert (message); (message will return in error because it's calling a variable within the code block.)
+        </p>
+        <p><b>Nested Functions</b> refers to a function created within another function. It can access any variables outside of it.</p>
+
+        <p>The <b>Lexical Environment </b> consists of two parts:
+            <ul><i>Environmental Record</i> stores all local variables as its properties.</ul>
+            <ul><i>Outer Lexical Environment </i> which is associated with any outside code.</ul>
+        
+            If the variable changes throughout the code, the Lexical Environment will pick up the most recent change to the variable.
+        </p>
+
+        <p><b>Currying</b> is the process of breaking down a function that takes multiple arguments. It allows us to call the arguments again, 
+            allowing us to create other functions, without changing the original function. </p>
+
+    </body>
+</html>
